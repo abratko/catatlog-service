@@ -1,0 +1,9 @@
+.idea/
+.http/
+.request/
+.vscode/
+bin/
+.env
+*.pb.go
+http-client.private.env.json
+*/**/__*.*

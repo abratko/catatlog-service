@@ -1,0 +1,3 @@
+[submodule "api/catalog/pb"]
+	path = api/catalog/pb
+	url = ../../protocols/catalog.git

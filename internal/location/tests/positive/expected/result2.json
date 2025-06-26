@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 12,
+    "ZipCode": "N3V 6T1",
+    "Country": {
+      "Name": "",
+      "Code": "CA"
+    },
+    "State": {
+      "Name": "",
+      "Code": "ON"
+    },
+    "City": "Brantford",
+    "Address": {
+      "Line1": "470 Hardy Rd",
+      "Line2": "",
+      "Line3": ""
+    },
+    "IsResidential": false,
+    "Name": "Brantford, ON N3V 6T1",
+    "Phone": ""
+  }
+]

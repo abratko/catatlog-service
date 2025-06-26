@@ -1,0 +1,364 @@
+{
+  "_source": false,
+  "aggs": {
+    "category": {
+      "aggs": {
+        "category": {
+          "terms": {
+            "field": "category_ids",
+            "size": 1000
+          }
+        }
+      },
+      "filter": {
+        "bool": {
+          "filter": [
+            {
+              "nested": {
+                "path": "offers",
+                "query": {
+                  "bool": {
+                    "must": [
+                      {
+                        "terms": {
+                          "offers.facility_address.id": ["10", "64"]
+                        }
+                      },
+                      {
+                        "range": {
+                          "offers.stock.qty": {
+                            "gte": 1
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "terms": {
+                "condition": [
+                  "Refurbished",
+                  "Used"
+                ]
+              }
+            },
+            {
+              "terms": {
+                "brands_collection.title": [
+                  "HP",
+                  "Samsung",
+                  "Lenovo"
+                ]
+              }
+            },
+            {
+              "range": {
+                "price": {
+                  "gte": 100,
+                  "lte": 1258
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "condition": {
+      "aggs": {
+        "condition": {
+          "terms": {
+            "field": "condition",
+            "size": 1000
+          }
+        }
+      },
+      "filter": {
+        "bool": {
+          "filter": [
+            {
+              "nested": {
+                "path": "offers",
+                "query": {
+                  "bool": {
+                    "must": [
+                      {
+                        "terms": {
+                          "offers.facility_address.id": [
+                            "10",
+                            "64"
+                          ]
+                        }
+                      },
+                      {
+                        "range": {
+                          "offers.stock.qty": {
+                            "gte": 1
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "terms": {
+                "category_ids": [
+                  "48",
+                  "195",
+                  "354",
+                  "110",
+                  "112"
+                ]
+              }
+            },
+            {
+              "terms": {
+                "brands_collection.title": [
+                  "HP",
+                  "Samsung",
+                  "Lenovo"
+                ]
+              }
+            },
+            {
+              "range": {
+                "price": {
+                  "gte": 100,
+                  "lte": 1258
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "location": {
+      "aggs": {
+        "location": {
+          "aggs": {
+            "location": {
+              "aggs": {
+                "location": {
+                  "terms": {
+                    "field": "offers.facility_address.id"
+                  }
+                }
+              },
+              "filter": {
+                "bool": {
+                  "filter": {
+                    "range": {
+                      "offers.stock.qty": {
+                        "gte": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "nested": {
+            "path": "offers"
+          }
+        }
+      },
+      "filter": {
+        "bool": {
+          "filter": [
+            {
+              "terms": {
+                "category_ids": [
+                  "48",
+                  "195",
+                  "354",
+                  "110",
+                  "112"
+                ]
+              }
+            },
+            {
+              "terms": {
+                "condition": [
+                  "Refurbished",
+                  "Used"
+                ]
+              }
+            },
+            {
+              "terms": {
+                "brands_collection.title": [
+                  "HP",
+                  "Samsung",
+                  "Lenovo"
+                ]
+              }
+            },
+            {
+              "range": {
+                "price": {
+                  "gte": 100,
+                  "lte": 1258
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "manufacturer": {
+      "aggs": {
+        "manufacturer": {
+          "terms": {
+            "field": "brands_collection.title",
+            "size": 1000
+          }
+        }
+      },
+      "filter": {
+        "bool": {
+          "filter": [
+            {
+              "nested": {
+                "path": "offers",
+                "query": {
+                  "bool": {
+                    "must": [
+                      {
+                        "terms": {
+                          "offers.facility_address.id": [
+                            "10",
+                            "64"
+                          ]
+                        }
+                      },
+                      {
+                        "range": {
+                          "offers.stock.qty": {
+                            "gte": 1
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "terms": {
+                "category_ids": [
+                  "48",
+                  "195",
+                  "354",
+                  "110",
+                  "112"
+                ]
+              }
+            },
+            {
+              "terms": {
+                "condition": [
+                  "Refurbished",
+                  "Used"
+                ]
+              }
+            },
+            {
+              "range": {
+                "price": {
+                  "gte": 100,
+                  "lte": 1258
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "price": {
+      "aggs": {
+        "price": {
+          "stats": {
+            "field": "price"
+          }
+        }
+      },
+      "filter": {
+        "bool": {
+          "filter": [
+            {
+              "nested": {
+                "path": "offers",
+                "query": {
+                  "bool": {
+                    "must": [
+                      {
+                        "terms": {
+                          "offers.facility_address.id": [
+                            "10",
+                            "64"
+                          ]
+                        }
+                      },
+                      {
+                        "range": {
+                          "offers.stock.qty": {
+                            "gte": 1
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "terms": {
+                "category_ids": [
+                  "48",
+                  "195",
+                  "354",
+                  "110",
+                  "112"
+                ]
+              }
+            },
+            {
+              "terms": {
+                "condition": [
+                  "Refurbished",
+                  "Used"
+                ]
+              }
+            },
+            {
+              "terms": {
+                "brands_collection.title": [
+                  "HP",
+                  "Samsung",
+                  "Lenovo"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "range": {
+            "stock.qty": {
+              "gte": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  "size": 0
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "ZipCode": "40601",
+    "Country": {
+      "Name": "",
+      "Code": "US"
+    },
+    "State": {
+      "Name": "",
+      "Code": "KY"
+    },
+    "City": "Frankfort",
+    "Address": {
+      "Line1": "2001 Leestown Rd",
+      "Line2": "",
+      "Line3": ""
+    },
+    "IsResidential": false,
+    "Name": "Frankfort, KY 40601",
+    "Phone": ""
+  }
+]

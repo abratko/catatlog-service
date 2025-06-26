@@ -1,0 +1,161 @@
+{
+  "filters": [
+    {
+      "key": "location",
+      "label": "Location",
+      "terms": [
+        {
+          "value": "1",
+          "count": 160,
+          "props": {
+            "country": "US",
+            "name": "Frankfort, KY 40601"
+          }
+        },
+        {
+          "value": "97",
+          "count": 389,
+          "props": {
+            "country": "CA",
+            "name": "Brantford, ON N3V 6T1"
+          }
+        },
+        {
+          "value": "64",
+          "count": 1489,
+          "props": {
+            "country": "US",
+            "name": "Fort Worth D, TX 76140"
+          }
+        },
+        {
+          "value": "10",
+          "count": 735,
+          "props": {
+            "country": "US",
+            "name": "Bentonville, AR 72713"
+          }
+        }
+      ]
+    },
+    {
+      "key": "category",
+      "label": "Category",
+      "terms": [
+        {
+          "value": "48",
+          "count": 263,
+          "props": {
+            "name": "Category 1",
+            "path": ["path1"],
+            "slug": "slug1"
+          }
+        },
+        {
+          "value": "195",
+          "count": 79,
+          "props": {
+            "name": "Category 2",
+            "path": ["path2"],
+            "slug": "slug2"
+          }
+        },
+        {
+          "value": "354",
+          "count": 72,
+          "props": {
+            "name": "Category 3",
+            "path": ["path3"],
+            "slug": "slug3"
+          }
+        },
+        {
+          "value": "110",
+          "count": 66,
+          "props": {
+            "name": "Category 4",
+            "path": ["path4"],
+            "slug": "slug4"
+          }
+        },
+        {
+          "value": "112",
+          "count": 49,
+          "props": {
+            "name": "Category 5",
+            "path": ["path5"],
+            "slug": "slug5"
+          }
+        }
+      ]
+    },
+    {
+      "key": "condition",
+      "label": "Condition",
+      "terms": [
+        {
+          "value": "Refurbished",
+          "count": 123
+        },
+        {
+          "value": "New",
+          "count": 116
+        },
+        {
+          "value": "NewDamagedBox",
+          "count": 13
+        },
+        {
+          "value": "Used",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "key": "manufacturer",
+      "label": "Manufacturer",
+      "terms": [
+        {
+          "value": "Apple",
+          "count": 137
+        },
+        {
+          "value": "Samsung",
+          "count": 16
+        },
+        {
+          "value": "Nintendo",
+          "count": 13
+        },
+        {
+          "value": "TCL",
+          "count": 8
+        },
+        {
+          "value": "VIZIO",
+          "count": 8
+        },
+        {
+          "value": "ONN",
+          "count": 7
+        },
+        {
+          "value": "Canon",
+          "count": 5
+        },
+        {
+          "value": "Fitbit",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "key": "price",
+      "label": "Price",
+      "range": {
+        "from": "5",
+        "to": "9500"
+      }
+    }
+  ]
+}

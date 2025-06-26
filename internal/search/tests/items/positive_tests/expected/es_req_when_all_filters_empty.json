@@ -1,0 +1,131 @@
+{
+  "_source": false,
+  "aggs": {
+    "count": {
+      "cardinality": {
+        "field": "family.name"
+      }
+    },
+    "name": {
+      "aggs": {
+        "condition": {
+          "terms": {
+            "field": "condition"
+          }
+        },
+        "facility": {
+          "aggs": {
+            "facility": {
+              "aggs": {
+                "facilityAddressName": {
+                  "aggs": {
+                    "stockQty": {
+                      "sum": {
+                        "field": "offers.stock.qty"
+                      }
+                    }
+                  },
+                  "terms": {
+                    "field": "offers.facility_address.name",
+                    "size": 30
+                  }
+                },
+                "stockQty": {
+                  "sum": {
+                    "field": "offers.stock.qty"
+                  }
+                }
+              },
+              "filter": {
+                "bool": {
+                  "filter": [
+                    {
+                      "range": {
+                        "offers.stock.qty": {
+                          "gte": 1
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "nested": {
+            "path": "offers"
+          }
+        },
+        "id": {
+          "terms": {
+            "field": "family.id",
+            "size": 1
+          }
+        },
+        "image": {
+          "terms": {
+            "field": "image",
+            "size": 1
+          }
+        },
+        "lowestAsk": {
+          "min": {
+            "field": "price"
+          }
+        },
+        "offset": {
+          "bucket_sort": {
+            "from": 0,
+            "size": 40
+          }
+        },
+        "productDisclaimer": {
+          "terms": {
+            "field": "disclaimer",
+            "size": 1
+          }
+        },
+        "productName": {
+          "terms": {
+            "field": "name.raw",
+            "size": 1
+          }
+        },
+        "productSlug": {
+          "terms": {
+            "field": "slug",
+            "size": 1
+          }
+        },
+        "skus": {
+          "terms": {
+            "field": "sku"
+          }
+        },
+        "slug": {
+          "terms": {
+            "field": "family.slug",
+            "size": 1
+          }
+        }
+      },
+      "terms": {
+        "field": "family.name",
+        "size": 1000
+      }
+    }
+  },
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "range": {
+            "stock.qty": {
+              "gte": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  "size": 0
+}

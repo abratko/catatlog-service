@@ -1,0 +1,84 @@
+{
+  "_source": false,
+  "aggs": {
+    "category": {
+      "terms": {
+        "field": "category_ids",
+        "size": 1000
+      }
+    },
+    "condition": {
+      "terms": {
+        "field": "condition",
+        "size": 1000
+      }
+    },
+    "location": {
+      "aggs": {
+        "location": {
+          "aggs": {
+            "location": {
+              "terms": {
+                "field": "offers.facility_address.id"
+              }
+            }
+          },
+          "filter": {
+            "bool": {
+              "filter": {
+                "range": {
+                  "offers.stock.qty": {
+                    "gte": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "nested": {
+        "path": "offers"
+      }
+    },
+    "manufacturer": {
+      "terms": {
+        "field": "brands_collection.title",
+        "size": 1000
+      }
+    },
+    "price": {
+      "stats": {
+        "field": "price"
+      }
+    }
+  },
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "range": {
+            "stock.qty": {
+              "gte": 0
+            }
+          }
+        }
+      ],
+      "must": [
+        {
+          "multi_match": {
+            "fields": [
+              "name^5",
+              "description",
+              "sku"
+            ],
+            "fuzziness": "2",
+            "max_expansions": 3,
+            "operator": "AND",
+            "query": "sams"
+          }
+        }
+      ]
+    }
+  },
+  "size": 0
+}

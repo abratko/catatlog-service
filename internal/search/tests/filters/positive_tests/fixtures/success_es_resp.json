@@ -1,0 +1,150 @@
+   {
+      "took": 1,
+      "timed_out": false,
+      "_shards": {
+         "total": 1,
+         "successful": 1,
+         "skipped": 0,
+         "failed": 0
+      },
+      "hits": {
+         "total": {
+            "value": 508,
+            "relation": "eq"
+         },
+         "max_score": null,
+         "hits": []
+      },
+      "aggregations": {
+         "condition": {
+            "doc_count": 263,
+            "condition": {
+               "doc_count_error_upper_bound": 0,
+               "sum_other_doc_count": 0,
+               "buckets": [
+                  {
+                     "key": "Refurbished",
+                     "doc_count": 123
+                  },
+                  {
+                     "key": "New",
+                     "doc_count": 116
+                  },
+                  {
+                     "key": "NewDamagedBox",
+                     "doc_count": 13
+                  },
+                  {
+                     "key": "Used",
+                     "doc_count": 11
+                  }
+               ]
+            }
+         },
+         "price": {
+            "doc_count": 263,
+            "price": {
+               "count": 263,
+               "min": 5.0,
+               "max": 9500.0,
+               "avg": 294.49049429657794,
+               "sum": 77451.0
+            }
+         },
+         "location": {
+            "doc_count": 263,
+            "location": {
+               "doc_count": 273,
+               "location": {
+                  "doc_count_error_upper_bound": 0,
+                  "sum_other_doc_count": 0,
+                  "buckets": [
+                     {
+                     "key": 64,
+                     "doc_count": 1489
+                     },
+                     {
+                     "key": 10,
+                     "doc_count": 735
+                     },
+                     {
+                     "key": 97,
+                     "doc_count": 389
+                     },
+                     {
+                     "key": 1,
+                     "doc_count": 160
+                     }
+                  ]
+               }
+            }
+         },
+         "category": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+               {
+                  "key": 48,
+                  "doc_count": 263
+               },
+               {
+                  "key": 195,
+                  "doc_count": 79
+               },
+               {
+                  "key": 354,
+                  "doc_count": 72
+               },
+               {
+                  "key": 110,
+                  "doc_count": 66
+               },
+               {
+                  "key": 112,
+                  "doc_count": 49
+               }
+            ]
+         },
+         "manufacturer": {
+            "doc_count": 263,
+            "manufacturer": {
+               "doc_count_error_upper_bound": 0,
+               "sum_other_doc_count": 0,
+               "buckets": [
+                  {
+                     "key": "Apple",
+                     "doc_count": 137
+                  },
+                  {
+                     "key": "Samsung",
+                     "doc_count": 16
+                  },
+                  {
+                     "key": "Nintendo",
+                     "doc_count": 13
+                  },
+                  {
+                     "key": "TCL",
+                     "doc_count": 8
+                  },
+                  {
+                     "key": "VIZIO",
+                     "doc_count": 8
+                  },
+                  {
+                     "key": "ONN",
+                     "doc_count": 7
+                  },
+                  {
+                     "key": "Canon",
+                     "doc_count": 5
+                  },
+                  {
+                     "key": "Fitbit",
+                     "doc_count": 5
+                  }
+               ]
+            }
+         }
+      }
+   }

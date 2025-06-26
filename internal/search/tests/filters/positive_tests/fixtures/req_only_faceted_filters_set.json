@@ -1,0 +1,10 @@
+{
+  "condition":["Refurbished","Used"],
+  "price":{
+    "from":100.0,
+    "to":1258.0
+  },
+  "location": ["10", "64"],
+  "category":["48","195","354","110","112"],
+  "manufacturer":["HP","Samsung","Lenovo"]
+}

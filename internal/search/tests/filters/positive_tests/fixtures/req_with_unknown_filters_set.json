@@ -1,0 +1,14 @@
+{
+  "unknown_filter_1": "unknown_value_1",
+  "unknown_filter_2": ["unknown_value_2", "unknown_value_3"],
+  "unknown_filter_3": {
+    "from": 10.0,
+    "to": 100.0
+  },
+  "manufacturer": ["HP", "Samsung", "Lenovo"],
+  "price": {
+    "from": 100.0,
+    "to": 1258.0
+  },
+  "text": "sams"
+}

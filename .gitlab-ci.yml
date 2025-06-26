@@ -1,0 +1,7 @@
+include:
+  - project: 'gotrg/white-label/infrastructure/auto-devops'
+    file: 'go.yml'
+
+variables:
+  HELM_RELEASE_NAME: catalog
+  K8S_SECRET_ENVIRONMENT: catalog

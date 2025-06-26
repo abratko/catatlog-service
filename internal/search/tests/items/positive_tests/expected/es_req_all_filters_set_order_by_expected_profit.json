@@ -1,0 +1,226 @@
+{
+  "_source": false,
+  "aggs": {
+    "count": {
+      "cardinality": {
+        "field": "family.name"
+      }
+    },
+    "name": {
+      "aggs": {
+        "condition": {
+          "terms": {
+            "field": "condition"
+          }
+        },
+        "expectedProfit": {
+          "avg": {
+            "field": "sorting.expected_profit"
+          }
+        },
+        "facility": {
+          "aggs": {
+            "facility": {
+              "aggs": {
+                "facilityAddressName": {
+                  "aggs": {
+                    "stockQty": {
+                      "sum": {
+                        "field": "offers.stock.qty"
+                      }
+                    }
+                  },
+                  "terms": {
+                    "field": "offers.facility_address.name",
+                    "size": 30
+                  }
+                },
+                "stockQty": {
+                  "sum": {
+                    "field": "offers.stock.qty"
+                  }
+                }
+              },
+              "filter": {
+                "bool": {
+                  "filter": [
+                    {
+                      "range": {
+                        "offers.stock.qty": {
+                          "gte": 0
+                        }
+                      }
+                    },
+                    {
+                      "terms": {
+                        "offers.facility_address.id": [
+                          "10",
+                          "64"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "nested": {
+            "path": "offers"
+          }
+        },
+        "id": {
+          "terms": {
+            "field": "family.id",
+            "size": 1
+          }
+        },
+        "image": {
+          "terms": {
+            "field": "image",
+            "size": 1
+          }
+        },
+        "lowestAsk": {
+          "min": {
+            "field": "price"
+          }
+        },
+        "offset": {
+          "bucket_sort": {
+            "from": 10,
+            "size": 10
+          }
+        },
+        "productDisclaimer": {
+          "terms": {
+            "field": "disclaimer",
+            "size": 1
+          }
+        },
+        "productName": {
+          "terms": {
+            "field": "name.raw",
+            "size": 1
+          }
+        },
+        "productSlug": {
+          "terms": {
+            "field": "slug",
+            "size": 1
+          }
+        },
+        "skus": {
+          "terms": {
+            "field": "sku"
+          }
+        },
+        "slug": {
+          "terms": {
+            "field": "family.slug",
+            "size": 1
+          }
+        }
+      },
+      "terms": {
+        "field": "family.name",
+        "order": [
+          {
+            "expectedProfit": "desc"
+          }
+        ],
+        "size": 1000
+      }
+    }
+  },
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "nested": {
+            "path": "offers",
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "terms": {
+                      "offers.facility_address.id": [
+                        "10",
+                        "64"
+                      ]
+                    }
+                  },
+                  {
+                    "range": {
+                      "offers.stock.qty": {
+                        "gte": 0
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "terms": {
+            "category_ids": [
+              "182",
+              "184",
+              "374",
+              "48",
+              "187"
+            ]
+          }
+        },
+        {
+          "terms": {
+            "condition": [
+              "Refurbished",
+              "Used"
+            ]
+          }
+        },
+        {
+          "terms": {
+            "brands_collection.title": [
+              "HP",
+              "Samsung",
+              "Lenovo"
+            ]
+          }
+        },
+        {
+          "range": {
+            "price": {
+              "gte": 100,
+              "lte": 1258
+            }
+          }
+        },
+        {
+          "range": {
+            "stock.qty": {
+              "gte": 0
+            }
+          }
+        }
+      ],
+      "must": [
+        {
+          "multi_match": {
+            "fields": [
+              "name^5",
+              "description",
+              "sku"
+            ],
+            "fuzziness": "2",
+            "max_expansions": 3,
+            "operator": "AND",
+            "query": "sams"
+          }
+        }
+      ]
+    }
+  },
+  "size": 0
+}

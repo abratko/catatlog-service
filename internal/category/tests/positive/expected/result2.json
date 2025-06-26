@@ -1,0 +1,62 @@
+[
+    {
+        "id": "33",
+        "slug": "patio-garden",
+        "name": "Patio \u0026 Garden",
+        "path": [
+            "1",
+            "3",
+            "33"
+        ],
+        "isActive": true,
+        "level": 2,
+        "parentId": "3",
+        "children": [
+            {
+                "id": "37",
+                "slug": "pools-water-fun",
+                "name": "Pools \u0026 Water Fun",
+                "path": [
+                    "1",
+                    "3",
+                    "33",
+                    "37"
+                ],
+                "isActive": true,
+                "level": 3,
+                "parentId": "33",
+                "children": null
+            },
+            {
+                "id": "35",
+                "slug": "grills-outdoor-cooking",
+                "name": "Grills \u0026 Outdoor Cooking",
+                "path": [
+                    "1",
+                    "3",
+                    "33",
+                    "35"
+                ],
+                "isActive": true,
+                "level": 3,
+                "parentId": "33",
+                "children": null
+            },
+            {
+                "id": "34",
+                "slug": "outdoor-play",
+                "name": "Outdoor Play",
+                "path": [
+                    "1",
+                    "3",
+                    "33",
+                    "34"
+                ],
+                "isActive": true,
+                "level": 3,
+                "parentId": "33",
+                "children": null
+            }
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+{
+  "filters":{
+    "condition":["Refurbished","Used"],
+    "price":{
+      "from":100.0,
+      "to":1258.0
+    },
+    "location": ["10", "64"],
+    "text": "sams"
+  }
+}

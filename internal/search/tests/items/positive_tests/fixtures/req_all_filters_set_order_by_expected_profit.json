@@ -1,0 +1,22 @@
+{
+  "filters":{
+    "condition":["Refurbished","Used"],
+    "price":{
+      "from":100.0,
+      "to":1258.0
+    },
+    "location": ["10", "64"],
+    "category":["182","184","374","48","187"],
+    "manufacturer":["HP","Samsung","Lenovo"],
+    "inStock": 0,
+    "text": "sams"
+  },
+  "orderBy":{
+    "field":"expectedProfit",
+    "direction":"desc"
+  },
+  "pagination":{
+    "page":2,
+    "size":10
+  }
+}

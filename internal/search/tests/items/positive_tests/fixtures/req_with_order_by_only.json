@@ -1,0 +1,6 @@
+{
+  "orderBy":{
+    "field":"expectedProfit",
+    "direction":"desc"
+  }
+}

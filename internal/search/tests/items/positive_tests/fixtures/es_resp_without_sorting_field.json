@@ -1,0 +1,392 @@
+{
+   "took": 70,
+   "timed_out": false,
+   "_shards": {
+       "total": 1,
+       "successful": 1,
+       "skipped": 0,
+       "failed": 0
+   },
+   "hits": {
+       "total": {
+           "value": 505,
+           "relation": "eq"
+       },
+       "max_score": null,
+       "hits": []
+   },
+   "aggregations": {
+       "name": {
+           "doc_count_error_upper_bound": 0,
+           "sum_other_doc_count": 0,
+           "buckets": [
+               {
+                   "key": "Anker A8843 6 ft Powerline III USB C Nylon Braided Lightning Fast Charging Cable, Black",
+                   "doc_count": 1,
+                   "image": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "/catalog/product/GWS848061057898N/0.jpeg",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "skus": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "GWS848061057898N",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "productSlug": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "anker-a8843-6-ft-powerline-iii-usb-c-nylon-braided-lightning-fast-charging-cable-black-new-factory-sealed",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "lowestAsk": {
+                       "value": 14
+                   },
+                   "productName": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "Anker A8843 6 ft Powerline III USB C Nylon Braided Lightning Fast Charging Cable, Black",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "condition": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "New",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "productDisclaimer": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "id": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "upc848061057898",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "facility": {
+                       "doc_count": 1,
+                       "facility": {
+                           "doc_count": 1,
+                           "facilityAddressName": {
+                               "doc_count_error_upper_bound": 0,
+                               "sum_other_doc_count": 0,
+                               "buckets": [
+                                   {
+                                       "key": "Frankfort, KY 40601",
+                                       "doc_count": 1,
+                                       "stockQty": {
+                                           "value": 28
+                                       }
+                                   }
+                               ]
+                           },
+                           "stockQty": {
+                               "value": 28
+                           }
+                       }
+                   },
+                   "slug": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "anker-a8843-6-ft-powerline-iii-usb-c-nylon-braided-lightning-fast-charging-cable-black",
+                               "doc_count": 1
+                           }
+                       ]
+                   }
+               },
+               {
+                   "key": "Anker AKA88650A1 765 USB C to USB C Cable 140W USB 2.0 Data Fast Charging for Laptop , Galaxy S21, 3ft",
+                   "doc_count": 2,
+                   "image": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 1,
+                       "buckets": [
+                           {
+                               "key": "/catalog/product/GWS194644096441N/0.jpeg",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "skus": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "GWS194644096441N",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "GWS194644096441ND",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "productSlug": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "anker-aka88650a1-765-usb-c-to-usb-c-cable-140w-usb-2-0-data-fast-charging-for-laptop-galaxy-s21-3ft-new-damaged-box",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "anker-aka88650a1-765-usb-c-to-usb-c-cable-140w-usb-2-0-data-fast-charging-for-laptop-galaxy-s21-3ft-new-factory-sealed",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "lowestAsk": {
+                       "value": 9
+                   },
+                   "productName": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "Anker AKA88650A1 765 USB C to USB C Cable 140W USB 2.0 Data Fast Charging for Laptop , Galaxy S21, 3ft",
+                               "doc_count": 2
+                           }
+                       ]
+                   },
+                   "condition": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "New",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "NewDamagedBox",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "productDisclaimer": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "",
+                               "doc_count": 2
+                           }
+                       ]
+                   },
+                   "id": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "upc194644096441",
+                               "doc_count": 2
+                           }
+                       ]
+                   },
+                   "facility": {
+                       "doc_count": 2,
+                       "facility": {
+                           "doc_count": 2,
+                           "facilityAddressName": {
+                               "doc_count_error_upper_bound": 0,
+                               "sum_other_doc_count": 0,
+                               "buckets": [
+                                   {
+                                       "key": "Frankfort, KY 40601",
+                                       "doc_count": 2,
+                                       "stockQty": {
+                                           "value": 23
+                                       }
+                                   }
+                               ]
+                           },
+                           "stockQty": {
+                               "value": 23
+                           }
+                       }
+                   },
+                   "slug": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "anker-aka88650a1-765-usb-c-to-usb-c-cable-140w-usb-2-0-data-fast-charging-for-laptop-galaxy-s21-3ft",
+                               "doc_count": 2
+                           }
+                       ]
+                   }
+               },
+               {
+                   "key": "Apple AirPods 2 White with Charging Case In Ear Headphones MV7N2AM/A",
+                   "doc_count": 3,
+                   "image": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 2,
+                       "buckets": [
+                           {
+                               "key": "/catalog/product/GWS190199098428N/0.jpeg",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "skus": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "GWS190199098428N",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "GWS190199098428R",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "GWS190199098428U",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "productSlug": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "apple-airpods-2-white-with-charging-case-in-ear-headphones-mv7n2am-a-certified-refurbished",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "apple-airpods-2-white-with-charging-case-in-ear-headphones-mv7n2am-a-new-factory-sealed",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "apple-airpods-2-white-with-charging-case-in-ear-headphones-mv7n2am-a-used",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "lowestAsk": {
+                       "value": 60
+                   },
+                   "productName": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "Apple AirPods 2 White with Charging Case In Ear Headphones MV7N2AM/A",
+                               "doc_count": 3
+                           }
+                       ]
+                   },
+                   "condition": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "New",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "Refurbished",
+                               "doc_count": 1
+                           },
+                           {
+                               "key": "Used",
+                               "doc_count": 1
+                           }
+                       ]
+                   },
+                   "productDisclaimer": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "",
+                               "doc_count": 3
+                           }
+                       ]
+                   },
+                   "id": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "upc190199098428",
+                               "doc_count": 3
+                           }
+                       ]
+                   },
+                   "facility": {
+                       "doc_count": 4,
+                       "facility": {
+                           "doc_count": 4,
+                           "facilityAddressName": {
+                               "doc_count_error_upper_bound": 0,
+                               "sum_other_doc_count": 0,
+                               "buckets": [
+                                   {
+                                       "key": "Bentonville, AR 72713",
+                                       "doc_count": 4,
+                                       "stockQty": {
+                                           "value": 79
+                                       }
+                                   }
+                               ]
+                           },
+                           "stockQty": {
+                               "value": 79
+                           }
+                       }
+                   },
+                   "slug": {
+                       "doc_count_error_upper_bound": 0,
+                       "sum_other_doc_count": 0,
+                       "buckets": [
+                           {
+                               "key": "apple-airpods-2-white-with-charging-case-in-ear-headphones-mv7n2am-a",
+                               "doc_count": 3
+                           }
+                       ]
+                   }
+               }
+           ]
+       },
+       "count": {
+           "value": 475
+       }
+   }
+ }

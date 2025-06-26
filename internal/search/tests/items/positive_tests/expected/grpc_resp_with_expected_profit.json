@@ -1,0 +1,80 @@
+{
+  "totalCount": 475,
+  "items": [
+    {
+      "id": "upc848061057898",
+      "name": "Anker A8843 6 ft Powerline III USB C Nylon Braided Lightning Fast Charging Cable, Black",
+      "skus": [
+        "GWS848061057898N"
+      ],
+      "slug": "anker-a8843-6-ft-powerline-iii-usb-c-nylon-braided-lightning-fast-charging-cable-black",
+      "image": "/catalog/product/GWS848061057898N/0.jpeg",
+      "lowestAsk": 14,
+      "stockQty": 28,
+      "conditions": {
+        "New": 1
+      },
+      "facilities": {
+        "Frankfort, KY 40601": 28
+      },
+      "productSlug": "anker-a8843-6-ft-powerline-iii-usb-c-nylon-braided-lightning-fast-charging-cable-black-new-factory-sealed",
+      "productName": "Anker A8843 6 ft Powerline III USB C Nylon Braided Lightning Fast Charging Cable, Black",
+      "sortingField": {
+        "field": "expectedProfit",
+        "value": "432.5"
+      }
+    },
+    {
+      "id": "upc194644096441",
+      "name": "Anker AKA88650A1 765 USB C to USB C Cable 140W USB 2.0 Data Fast Charging for Laptop , Galaxy S21, 3ft",
+      "skus": [
+        "GWS194644096441N",
+        "GWS194644096441ND"
+      ],
+      "slug": "anker-aka88650a1-765-usb-c-to-usb-c-cable-140w-usb-2-0-data-fast-charging-for-laptop-galaxy-s21-3ft",
+      "image": "/catalog/product/GWS194644096441N/0.jpeg",
+      "lowestAsk": 9,
+      "stockQty": 23,
+      "conditions": {
+        "New": 1,
+        "NewDamagedBox": 1
+      },
+      "facilities": {
+        "Frankfort, KY 40601": 23
+      },
+      "productSlug": "anker-aka88650a1-765-usb-c-to-usb-c-cable-140w-usb-2-0-data-fast-charging-for-laptop-galaxy-s21-3ft-new-damaged-box",
+      "productName": "Anker AKA88650A1 765 USB C to USB C Cable 140W USB 2.0 Data Fast Charging for Laptop , Galaxy S21, 3ft",
+      "sortingField": {
+        "field": "expectedProfit",
+        "value": "400"
+      }
+    },
+    {
+      "id": "upc190199098428",
+      "name": "Apple AirPods 2 White with Charging Case In Ear Headphones MV7N2AM/A",
+      "skus": [
+        "GWS190199098428N",
+        "GWS190199098428R",
+        "GWS190199098428U"
+      ],
+      "slug": "apple-airpods-2-white-with-charging-case-in-ear-headphones-mv7n2am-a",
+      "image": "/catalog/product/GWS190199098428N/0.jpeg",
+      "lowestAsk": 60,
+      "stockQty": 79,
+      "conditions": {
+        "New": 1,
+        "Refurbished": 1,
+        "Used": 1
+      },
+      "facilities": {
+        "Bentonville, AR 72713": 79
+      },
+      "productSlug": "apple-airpods-2-white-with-charging-case-in-ear-headphones-mv7n2am-a-certified-refurbished",
+      "productName": "Apple AirPods 2 White with Charging Case In Ear Headphones MV7N2AM/A",
+      "sortingField": {
+        "field": "expectedProfit",
+        "value": "300"
+      }
+    }
+  ]
+}

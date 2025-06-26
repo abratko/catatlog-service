@@ -1,0 +1,131 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 4,
+      "relation": "eq"
+    },
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "gws_develop_facility",
+        "_type": "_doc",
+        "_id": "1",
+        "_score": 1,
+        "_source": {
+          "@timestamp": "2025-04-10T11:01:18",
+          "id": 11,
+          "zip_code": "40601",
+          "country": {
+            "name": "",
+            "code": "US"
+          },
+          "state": {
+            "name": "",
+            "code": "KY"
+          },
+          "city": "Frankfort",
+          "address": {
+            "line1": "2001 Leestown Rd",
+            "line2": "",
+            "line3": ""
+          },
+          "is_residential": false,
+          "phone": "",
+          "name": "Frankfort, KY 40601"
+        }
+      },
+      {
+        "_index": "gws_develop_facility",
+        "_type": "_doc",
+        "_id": "97",
+        "_score": 1,
+        "_source": {
+          "@timestamp": "2025-04-10T11:49:58",
+          "id": 12,
+          "zip_code": "N3V 6T1",
+          "country": {
+            "name": "",
+            "code": "CA"
+          },
+          "state": {
+            "name": "",
+            "code": "ON"
+          },
+          "city": "Brantford",
+          "address": {
+            "line1": "470 Hardy Rd",
+            "line2": "",
+            "line3": ""
+          },
+          "is_residential": false,
+          "phone": "",
+          "name": "Brantford, ON N3V 6T1"
+        }
+      },
+      {
+        "_index": "gws_develop_facility",
+        "_type": "_doc",
+        "_id": "64",
+        "_score": 1,
+        "_source": {
+          "@timestamp": "2025-04-10T11:50:09",
+          "id": 13,
+          "zip_code": "76140",
+          "country": {
+            "name": "",
+            "code": "US"
+          },
+          "state": {
+            "name": "",
+            "code": "TX"
+          },
+          "city": "Fort Worth",
+          "address": {
+            "line1": "7100 Oak Grove Road",
+            "line2": "",
+            "line3": ""
+          },
+          "is_residential": false,
+          "phone": "",
+          "name": "Fort Worth D, TX 76140"
+        }
+      },
+      {
+        "_index": "gws_develop_facility",
+        "_type": "_doc",
+        "_id": "10",
+        "_score": 1,
+        "_source": {
+          "@timestamp": "2025-04-12T06:01:27",
+          "id": 14,
+          "zip_code": "72713",
+          "country": {
+            "name": "",
+            "code": "US"
+          },
+          "state": {
+            "name": "",
+            "code": "AR"
+          },
+          "city": "Bentonville",
+          "address": {
+            "line1": "4900 SW Regional Airport Blvd",
+            "line2": "",
+            "line3": ""
+          },
+          "is_residential": false,
+          "phone": "",
+          "name": "Bentonville, AR 72713"
+        }
+      }
+    ]
+  }
+}

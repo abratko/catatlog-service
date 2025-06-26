@@ -1,0 +1,93 @@
+syntax = "proto3";
+
+package catalog;
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/any.proto";
+
+// go_package value is path relative of the path set in
+// --go_out and --go-grpc_out options for protoc-gen-go command
+//
+// Example:
+// if --go_out='./api' and go_package='./catalog/pb'
+// then generated file will be in folder ./api/catalog/pb
+option go_package = "../proto";
+
+message ItemsRequest {
+  string body = 1;
+}
+
+message FiltersRequest {
+  string body = 1;
+}
+
+message ItemsResult {
+  uint32 totalCount = 1;
+	repeated Item items = 2;
+}
+
+
+message SortingField {
+	string field = 1;
+	string value = 2;
+}
+
+message ItemsCollection {
+	uint32 totalCount = 1;
+	repeated Item items = 2;
+}
+
+message Item {
+	string id = 1;
+	string name = 2;	
+	repeated string skus = 3;
+	string slug = 4;
+	string image = 5;
+	double lowestAsk = 6;
+	uint32 stockQty = 7;
+	map<string, uint32> conditions = 8;
+	map<string, uint32> facilities = 9;
+	//  This is info about any first a product
+	string productDisclaimer = 10;
+	string productSlug = 11;
+	string productName = 12;
+	SortingField sortingField = 13;
+}
+
+message FiltersResult {
+	repeated Filter filters = 1;
+}
+
+
+message RangeOpt {
+ string from = 1;
+ string to = 2;
+}
+
+message TermOpt {
+ string value = 1;
+ uint32 count = 2;
+ google.protobuf.Struct props = 3;
+ string label = 4;
+}
+
+
+message Filter {
+ string key = 1;
+ string label = 2;
+ repeated TermOpt terms = 3;
+ RangeOpt range = 4;
+ bool isOn = 5;
+ repeated string valAsTerms = 6;
+ RangeValue  valAsRange = 7;
+}
+
+message RangeValue {
+ string from = 1;
+ string to = 2;
+}
+
+service Search {
+	rpc items(ItemsRequest) returns (ItemsResult);
+	rpc filters(FiltersRequest) returns (FiltersResult);
+}
